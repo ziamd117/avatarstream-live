@@ -1,73 +1,52 @@
-# Welcome to your Lovable project
+# Virtual Avatar Live Streaming Platform
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/3793c4c2-b7c6-4990-bfde-417dfa669518
+**URL**: https://preview--avatarstream-live.lovable.app/
+ 
+ 
 
-## How can I edit this code?
+ Transform your live streaming experience with AI-powered virtual avatars
+Built with VideoSDK Agents for seamless real-time broadcasting and audience engagement
 
-There are several ways of editing your application.
+ 
+### What This Does
 
-**Use Lovable**
+Replace your camera with an AI-powered virtual avatar that speaks, gestures, and engages with your audience in real-time. Perfect for educators who want privacy, corporate trainers seeking consistency, and content creators building unique brand experiences.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3793c4c2-b7c6-4990-bfde-417dfa669518) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+### Key Use Cases
 
-**Use your preferred IDE**
+* **Anonymous Education**: Teachers streaming lessons while maintaining complete privacy
+* **Corporate Training**: HR professionals conducting company-wide sessions with branded avatars
+* **Content Creation**: Streamers building consistent character-based content
+* **Telemedicine**: Healthcare professionals consulting with patients using professional avatars
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Core Features
 
-Follow these steps:
+#### Avatar System
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+* **Real-time Lip Sync**: Avatar mouth movement synchronized with your voice
+* **Facial Expressions**: Dynamic emotions based on voice tone and manual triggers
+* **Professional Avatars**: 4 preset avatar styles (Professional, Casual, Creative, Educator)
+* **Basic Customization**: Hair colors, clothing options, background themes
+* **Gesture Controls**: Interactive hand gestures (wave, thumbs up, point, thinking pose)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+#### Live Streaming
+ 
+* **Real-time Chat**: Live audience interaction with moderation tools
+* **Stream Management**: Professional dashboard with analytics and controls
+* **Screen Sharing**: Concurrent avatar and screen content streaming
+* **Multi-platform Support**: Stream to multiple destinations simultaneously
 
-# Step 3: Install the necessary dependencies.
-npm i
+#### AI-Powered Features
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+* **Live Transcription**: Real-time speech-to-text with accessibility compliance
+* **Emotion Detection**: Automatic avatar expressions based on voice sentiment
+* **Smart Chat**: AI-enhanced audience engagement and question filtering
+* **Voice Enhancement**: Background noise reduction and audio optimization
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/3793c4c2-b7c6-4990-bfde-417dfa669518) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+ 
