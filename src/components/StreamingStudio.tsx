@@ -20,6 +20,10 @@ import StreamControls from './StreamControls';
 import LiveChat from './LiveChat';
 import StreamStats from './StreamStats';
 import AvatarDisplay from './AvatarDisplay';
+import SubtitleDisplay from './SubtitleDisplay';
+import VoiceSynthesisControls from './VoiceSynthesisControls';
+import VideoSDKIntegration from './VideoSDKIntegration';
+import ReadyPlayerMeIntegration from './ReadyPlayerMeIntegration';
 
 interface StreamingStudioProps {
   onStartStream?: () => void;
@@ -36,6 +40,7 @@ const StreamingStudio: React.FC<StreamingStudioProps> = ({
   const [isVideoEnabled, setIsVideoEnabled] = useState(true);
   const [viewerCount, setViewerCount] = useState(0);
   const [streamTitle, setStreamTitle] = useState('Anonymous Educator - Live Learning Session');
+  const [subtitlesEnabled, setSubtitlesEnabled] = useState(true);
 
   // Simulate viewer count changes
   useEffect(() => {
@@ -188,30 +193,27 @@ const StreamingStudio: React.FC<StreamingStudioProps> = ({
             {/* Live Chat */}
             <LiveChat isStreaming={isStreaming} />
             
-            {/* Quick Actions */}
-            <Card>
-              <CardContent className="p-4">
-                <h3 className="font-semibold mb-3">Quick Actions</h3>
-                <div className="grid grid-cols-2 gap-2">
-                  <Button variant="outline" size="sm" className="h-auto p-3">
-                    <Users className="w-4 h-4 mb-1" />
-                    <span className="text-xs">Invite</span>
-                  </Button>
-                  <Button variant="outline" size="sm" className="h-auto p-3">
-                    <MessageSquare className="w-4 h-4 mb-1" />
-                    <span className="text-xs">Chat</span>
-                  </Button>
-                  <Button variant="outline" size="sm" className="h-auto p-3">
-                    <Share2 className="w-4 h-4 mb-1" />
-                    <span className="text-xs">Share</span>
-                  </Button>
-                  <Button variant="outline" size="sm" className="h-auto p-3">
-                    <Volume2 className="w-4 h-4 mb-1" />
-                    <span className="text-xs">Audio</span>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+            {/* VideoSDK Integration */}
+            <VideoSDKIntegration 
+              selectedAvatar={selectedAvatar}
+              onStreamStatusChange={(isLive) => setIsStreaming(isLive)}
+            />
+
+            {/* Subtitles */}
+            <SubtitleDisplay 
+              isStreaming={isStreaming}
+              isEnabled={subtitlesEnabled}
+              onToggle={setSubtitlesEnabled}
+            />
+
+            {/* Voice Synthesis */}
+            <VoiceSynthesisControls isStreaming={isStreaming} />
+
+            {/* Avatar Customization */}
+            <ReadyPlayerMeIntegration 
+              selectedAvatar={selectedAvatar}
+              onAvatarUpdate={setSelectedAvatar}
+            />
           </div>
         </div>
       </div>
