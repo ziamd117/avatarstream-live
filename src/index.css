@@ -8,35 +8,54 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Streaming Platform Theme - Professional Blues & Violets */
+    --background: 222 22% 8%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 222 20% 12%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 222 20% 12%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Stream Purple */
+    --primary: 252 94% 67%;
+    --primary-foreground: 222 22% 8%;
+    --primary-glow: 252 94% 77%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Professional Blue */
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 222 22% 8%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 222 20% 16%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 222 22% 8%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* Streaming Indicators */
+    --live-red: 0 85% 60%;
+    --live-green: 142 76% 36%;
+    --warning: 38 92% 50%;
+
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 222 20% 16%;
+    --input: 222 20% 16%;
+    --ring: 252 94% 67%;
 
-    --radius: 0.5rem;
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(252 94% 67%), hsl(217 91% 60%));
+    --gradient-dark: linear-gradient(135deg, hsl(222 22% 8%), hsl(222 20% 12%));
+    --gradient-avatar: linear-gradient(135deg, hsl(252 94% 67% / 0.1), hsl(217 91% 60% / 0.1));
+
+    /* Shadows */
+    --shadow-stream: 0 25px 50px -12px hsl(252 94% 67% / 0.4);
+    --shadow-avatar: 0 20px 40px -8px hsl(217 91% 60% / 0.3);
+    --shadow-glow: 0 0 40px hsl(252 94% 67% / 0.3);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -55,42 +74,48 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+  .light {
+    /* Light mode for accessibility */
+    --background: 0 0% 100%;
+    --foreground: 222 22% 8%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 22% 8%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 22% 8%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 252 94% 67%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 252 94% 77%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --live-red: 0 85% 60%;
+    --live-green: 142 76% 36%;
+    --warning: 38 92% 50%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 252 94% 67%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(252 94% 67%), hsl(217 91% 60%));
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 100%), hsl(210 40% 96%));
+    --gradient-avatar: linear-gradient(135deg, hsl(252 94% 67% / 0.1), hsl(217 91% 60% / 0.1));
+
+    --shadow-stream: 0 25px 50px -12px hsl(252 94% 67% / 0.2);
+    --shadow-avatar: 0 20px 40px -8px hsl(217 91% 60% / 0.15);
+    --shadow-glow: 0 0 40px hsl(252 94% 67% / 0.15);
   }
 }
 
@@ -101,5 +126,75 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Streaming Platform Utilities */
+  .gradient-stream {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-dark {
+    background: var(--gradient-dark);
+  }
+  
+  .gradient-avatar {
+    background: var(--gradient-avatar);
+  }
+  
+  .shadow-stream {
+    box-shadow: var(--shadow-stream);
+  }
+  
+  .shadow-avatar {
+    box-shadow: var(--shadow-avatar);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Live indicator animations */
+  .live-pulse {
+    animation: live-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  @keyframes live-pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  /* Avatar animations */
+  .avatar-float {
+    animation: avatar-float 6s ease-in-out infinite;
+  }
+  
+  @keyframes avatar-float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Stream quality indicator */
+  .stream-quality {
+    position: relative;
+  }
+  
+  .stream-quality::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, hsl(var(--live-green) / 0.1) 100%);
+    pointer-events: none;
   }
 }
